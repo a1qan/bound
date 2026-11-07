@@ -1,1 +1,66 @@
-test
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111214">
+  <meta name="description" content="join boundd on discord.">
+  <title>/boundd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/server-icon-rounded.ico" type="image/x-icon">
+  <script src="script.js" defer></script>
+  
+</head>
+<body>
+  <main class="page">
+    <section class="server" aria-labelledby="server-name">
+      <div class="server-icon" id="server-icon">
+        <img draggable="false" src="assets/server-icon.png" alt="bound">
+      </div>
+      <h1 id="server-name">boundd</h1>
+      <p class="description">we're a sfw social server, stox, fgs and active chats! welcoming staff + members and a safe space for you!</p>
+      <a class="join-button" href="server" target="_blank" rel="noopener noreferrer">join the server</a>
+      <button class="member-line" id="open-members" type="button" aria-haspopup="dialog" aria-controls="members-dialog" aria-label="Show online members">
+        <span class="status-dot" aria-hidden="true"></span><span id="member-count">loading...</span><span>online</span>
+      </button>
+    </section>
+    <section class="about-section" aria-labelledby="about-heading">
+      <div class="section-inner">
+        <h2 id="about-heading">we are more than just a server</h2>
+        <br>
+        <div class="feature-list">
+          <article class="feature"><span class="feature-number">1</span><div><h3>social</h3><p>we are a very social server that you can find friends in</p></div></article>
+          <article class="feature"><span class="feature-number">2</span><div><h3>active</h3><p>there are always people active and socialising within the server</p></div></article>
+          <article class="feature"><span class="feature-number">3</span><div><h3>giveaways</h3><p>join fun giveaways to win things like robux, profile decs, and more</p></div></article>
+          <article class="feature"><span class="feature-number">3</span><div><h3>stox</h3><p>we are a stox server as we allow things like slurs, only if you can reclaim them</p></div></article>
+          <article class="feature"><span class="feature-number">3</span><div><h3>sfw</h3><p>we are a completely sfw server, not allowing things like nsfw content and gore</p></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="bot-section" aria-labelledby="bot-heading">
+      <div class="section-inner">
+        <h2 id="bot-heading">our bot</h2>
+        <p class="section-copy">commands you can</p>
+        <div class="feature-list">
+          <article class="feature"><span class="feature-number">1</span><div><h3>/4inarow</h3><p>challenge someone to four in a row</p></div></article>
+          <article class="feature"><span class="feature-number">2</span><div><h3>/ttt</h3><p>challenge someone to tic-tac-toe</p></div></article>
+          <article class="feature"><span class="feature-number">3</span><div><h3>/fart</h3><p>play the fart sound in a voice channel</p></div></article>
+          <article class="feature"><span class="feature-number">4</span><div><h3>/fartcount</h3><p>show how many times bound has played the fart sound</p></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <dialog class="members-dialog" id="members-dialog" aria-labelledby="members-title">
+    <div class="dialog-heading">
+      <div><h2 id="members-title">Online now</h2><p class="dialog-subtitle"><span id="dialog-member-count">—</span> members online</p></div>
+      <button class="dialog-close" type="button" aria-label="Close online members">×</button>
+    </div>
+    <p class="members-message" id="members-message" aria-live="polite">Loading online members…</p>
+    <ul class="online-members" id="online-members"></ul>
+  </dialog>
+  <footer>Made with <span class="heart" aria-label="love">♥</span> by Aidan</footer>
+</body>
+</html>
