@@ -1,2 +1,2 @@
 # bound
-The website for /bound on discord!
+The website for /boundd on discord!
